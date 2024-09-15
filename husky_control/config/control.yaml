@@ -16,10 +16,12 @@ husky_velocity_controller:
   publish_cmd: true
 
   # Base frame_id
-  base_frame_id: base_link
+  # base_frame_id: base_link
+  base_frame_id: vehicle
 
   # Odometry fused with IMU is published by robot_localization, so
   # no need to publish a TF based on encoders alone.
+  # NOTE: modified here as I'm not using robot_localization
   enable_odom_tf: false
 
   # Wheel separation and radius multipliers

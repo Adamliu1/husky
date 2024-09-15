@@ -1,0 +1,10 @@
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="yadongliu_custom_platform">
+  <xacro:include filename="$(find vehicle_simulator)/urdf/lidar.urdf.xacro" />
+
+  <joint name="husky_custom_platform" type="fixed" >
+    <parent link="platform_mount_plate" />
+    <child link="lidar" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+</robot>
